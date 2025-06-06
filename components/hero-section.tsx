@@ -43,7 +43,7 @@ export function HeroSection() {
   return (
     <section
       ref={heroRef}
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-purple-50 via-green-50 to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-purple-50 via-green-50 to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-16 md:pt-0"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -52,7 +52,10 @@ export function HeroSection() {
         <div className="absolute top-40 left-40 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        {/* Spacer for mobile only */}
+        <div className="h-10 md:hidden"></div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left space-y-8">
@@ -63,7 +66,7 @@ export function HeroSection() {
                 </span>
               </h1>
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300">{t("hero.title")}</h2>
-              <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">{t("hero.subtitle")}</p>
+              <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto lg:mx-0">{t("hero.subtitle")}</p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
