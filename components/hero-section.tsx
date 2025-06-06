@@ -81,13 +81,13 @@ export function HeroSection() {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full blur-2xl opacity-30 animate-pulse"></div>
-              <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl transform hover:scale-105 transition-transform duration-300">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 rounded-[50%] blur-2xl opacity-30 animate-pulse"></div>
+              <div className="relative w-80 h-[28rem] md:w-96 md:h-[32rem] lg:w-[26rem] lg:h-[36rem] rounded-[50%] overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl transform hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/images/personal/sohany-profile.jpg"
                   alt="Sohany Galan"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                   priority
                 />
               </div>
